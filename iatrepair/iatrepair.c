@@ -230,12 +230,12 @@ static void cursor_advance(struct cursor *cursor, size_t delta)
 
 static void cursor_align(struct cursor *cursor, size_t alignment)
 {
-    size_t fdiff;
+    //size_t fdiff;
     size_t vdiff;
 
     assert(cursor != NULL);
 
-    fdiff = cursor->fpos.fo % alignment;
+    //fdiff = cursor->fpos.fo % alignment;
     vdiff = cursor->vpos.rva % alignment;
 
     //assert(fdiff == vdiff);
