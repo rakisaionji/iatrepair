@@ -519,7 +519,7 @@ static void iat_list_load(
         line_no++;
         result = sscanf(
                 line,
-                "%p %p %s %s",
+                "0x%p 0x%p %s %s",
                 (void **) &va.va,
                 (void **) &dummy,
                 dll_name,
